@@ -34,22 +34,32 @@ const app = express();
 connectDB();
 
 // Security
-app.use(helmet({ crossOriginEmbedderPolicy: false }));
+app.use(
+  helmet({
+    crossOriginEmbedderPolicy: false,
+  })
+);
 
 // CORS
-app.use(cors({
-  origin: process.env.CLIENT_URL || 'http://localhost:5173',
-  credentials: true,
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization'],
-}));
+app.use(
+  cors({
+    origin: process.env.CLIENT_URL || 'http://localhost:5173',
+    credentials: true,
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+  })
+);
 
 // Rate limiting
 const limiter = rateLimit({
-  windowMs: 15 * 60 * 1000, // 15 minutes
+  windowMs: 15 * 60 * 1000,
   max: 500,
-  message: { success: false, message: 'Too many requests, please try again later.' },
+  message: {
+    success: false,
+    message: 'Too many requests, please try again later.',
+  },
 });
+
 app.use('/api/', limiter);
 
 // Body parsing
@@ -57,7 +67,7 @@ app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 app.use(compression());
 
-// Logging (dev only)
+// Logging
 if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'));
 }
@@ -65,7 +75,10 @@ if (process.env.NODE_ENV === 'development') {
 // Static files for uploads
 app.use('/uploads', express.static(path.join(__dirname, '../uploads')));
 
-// API Routes
+// ============================================================
+// API ROUTES
+// ============================================================
+
 app.use('/api/auth', authRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/courses', courseRoutes);
@@ -84,12 +97,39 @@ app.use('/api/ai', aiRoutes);
 app.use('/api/admin', adminRoutes);
 app.use('/api/announcements', announcementRoutes);
 
-// Health check
+// ============================================================
+// HEALTH CHECK
+// ============================================================
+
 app.get('/api/health', (_req, res) => {
-  res.json({ success: true, message: 'EduPortal API is running', timestamp: new Date() });
+  res.json({
+    success: true,
+    message: 'EduPortal API is running',
+    timestamp: new Date(),
+  });
 });
 
-// Error handling
+// ============================================================
+// SERVE REACT FRONTEND
+// ============================================================
+
+const clientPath = path.join(__dirname, '../../client/dist');
+
+app.use(express.static(clientPath));
+
+// React Router fallback
+app.get('*', (_req, res, next) => {
+  if (_req.path.startsWith('/api/')) {
+    return next();
+  }
+
+  res.sendFile(path.join(clientPath, 'index.html'));
+});
+
+// ============================================================
+// ERROR HANDLING
+// ============================================================
+
 app.use(notFound);
 app.use(errorHandler);
 
