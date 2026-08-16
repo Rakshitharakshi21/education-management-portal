@@ -55,7 +55,7 @@ export const attendanceController = {
 
   async getStudentSummary(req: AuthRequest, res: Response, next: NextFunction) {
     try {
-      const studentId = req.params.studentId || String(req.user!._id);
+      const studentId = String(req.params.studentId || req.user!._id);
 
       // Authorization: students can only see their own
       if (req.user!.role === 'student' && studentId !== String(req.user!._id)) {
