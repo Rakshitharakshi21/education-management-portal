@@ -58,7 +58,7 @@ export const authController = {
 
   async resetPassword(req: Request, res: Response, next: NextFunction) {
     try {
-      const { token } = req.params;
+      const token = String(req.params.token);
       const { password } = req.body;
       if (!password) return sendError(res, 'New password is required.');
       const { user, token: jwtToken } = await authService.resetPassword(token, password);
