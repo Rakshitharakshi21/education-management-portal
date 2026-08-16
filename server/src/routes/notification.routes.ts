@@ -19,7 +19,7 @@ router.get('/', async (req: AuthRequest, res, next) => {
 
 router.put('/:id/read', async (req: AuthRequest, res, next) => {
   try {
-    await notificationService.markRead(req.params.id, String(req.user!._id));
+    await notificationService.markRead(String(req.params.id), String(req.user!._id));
     sendSuccess(res, {}, 200, 'Marked as read.');
   } catch (err) { next(err); }
 });
