@@ -7,7 +7,7 @@ import { sendSuccess, sendError } from '../utils/response';
 export const aiController = {
   async generateStudentInsight(req: AuthRequest, res: Response, next: NextFunction) {
     try {
-      const studentId = req.params.studentId || String(req.user!._id);
+      const studentId = String(req.params.studentId || req.user!._id);
       
       // Students can only see their own insights
       if (req.user!.role === 'student' && studentId !== String(req.user!._id)) {
