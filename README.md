@@ -1,217 +1,588 @@
-<div align="center">
+# 🎓 EduPortal — AI-Powered Education Management Platform
 
-# 🎓 Education Management Portal
+### 🚀 A unified academic intelligence platform for Students, Teachers & Administrators
 
-### AI-Powered Academic Intelligence for Students, Teachers & Admins
+<p align="center">
 
-</div>
+[![Live Demo](https://img.shields.io/badge/🌐%20Live%20Demo-EduPortal-00C853?style=for-the-badge)](https://eduportal-xti9.onrender.com)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/Rakshitharakshi21/education-management-portal)
+[![React](https://img.shields.io/badge/React-TypeScript-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![Node.js](https://img.shields.io/badge/Node.js-Express-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-Database-47A248?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
 
-<div align="center">
-
-<table>
-<tr>
-<td align="center" style="background-color:#6366F1; color:white; padding:8px 16px;"><b>React</b></td>
-<td align="center" style="background-color:#007ACC; color:white; padding:8px 16px;"><b>TypeScript</b></td>
-<td align="center" style="background-color:#339933; color:white; padding:8px 16px;"><b>Node.js</b></td>
-<td align="center" style="background-color:#8B5CF6; color:white; padding:8px 16px;"><b>Vite</b></td>
-<td align="center" style="background-color:#EC4899; color:white; padding:8px 16px;"><b>MongoDB</b></td>
-<td align="center" style="background-color:#F59E0B; color:white; padding:8px 16px;"><b>AI Powered</b></td>
-</tr>
-</table>
-
-</div>
+</p>
 
 ---
 
-<h2 style="color:#6366F1;">✨ What is this?</h2>
+## 🌐 Live Demo
 
-**Education Management Portal** is a one-stop web platform that connects **students, teachers, and administrators** — replacing scattered spreadsheets and manual tracking with a single smart system.
+### 👉 **https://eduportal-xti9.onrender.com**
 
-It doesn't just store data. It **understands** it — using AI to analyze performance, flag academic risks, and give personalized recommendations to help students improve.
+The complete application is deployed with:
 
-<br/>
+- ⚛️ React + TypeScript frontend
+- 🟢 Node.js + Express backend
+- 🍃 MongoDB Atlas database
+- 🤖 OpenRouter-powered AI features
+- 🔐 JWT-based authentication
+- ☁️ Production deployment on Render
 
-<h2 style="color:#EF4444;">🧩 The Problem We're Solving</h2>
+---
 
-> Most schools/colleges juggle attendance registers, gradebooks, and assignment tracking across disconnected tools — with no way to spot a struggling student until it's too late.
+# 🏆 Built for BUILDATHON 2026
 
-**Our solution:** one portal, three roles, and an AI layer that quietly watches the numbers so people don't have to.
+This project was developed for **BUILDATHON 2026**, a next-generation hackathon focused on combining human engineering with artificial intelligence.
 
-<br/>
+### 🎯 Hackathon Theme
 
-<h2 style="color:#8B5CF6;">🚀 Key Features</h2>
+BUILDATHON 2026 follows a **unified problem statement**, where participating teams compete against the same benchmark.
 
-<table>
-<tr>
-<th style="background-color:#6366F1; color:white;">🌐 Public Portal</th>
-<th style="background-color:#22C55E; color:white;">👨‍🎓 Student Dashboard</th>
-<th style="background-color:#F59E0B; color:white;">👩‍🏫 Teacher Dashboard</th>
-</tr>
-<tr>
-<td valign="top">
+The qualifier round emphasizes:
 
-- Home, Courses & Contact pages
-- Course search & filtering
-- Detailed course pages with schedules
-- Simple enrollment flow
+- 💻 Working software
+- 🧠 Innovation
+- ⚡ Optimization
+- 🏗️ Architecture
+- 🔐 Code quality
+- 📦 Repository quality
+- 🤖 AI-assisted evaluation
+- 🚀 Functional execution
 
-</td>
-<td valign="top">
+The Round 1 evaluation is **100% autonomous AI-based**, with the repository, implementation, architecture, commit history and functional execution being evaluated.
 
-- View enrolled courses & progress
-- Submit assignments online
-- Check attendance & exam results
-- Get AI-powered improvement tips
+Therefore, this project was designed with a strong focus on **real functionality, clean architecture, usability and production deployment**.
 
-</td>
-<td valign="top">
+---
 
-- Take attendance digitally
-- Create & evaluate assignments
-- Conduct exams, enter marks
-- Monitor class-wide performance
+# 💡 What is EduPortal?
 
-</td>
-</tr>
-</table>
+**EduPortal** is an AI-powered Education Management Platform designed to bring students, teachers and administrators into one unified academic ecosystem.
 
-<table>
-<tr>
-<th style="background-color:#EC4899; color:white;">🧠 AI-Powered Academic Intelligence</th>
-<th style="background-color:#06B6D4; color:white;">📊 Admin Control Center</th>
-</tr>
-<tr>
-<td valign="top">
+Traditional academic systems often separate:
 
-- Analyzes attendance + scores + exam marks together
-- Flags weak subjects and at-risk students early
-- Generates personalized recommendations for students
-- Surfaces trends teachers/admins would otherwise miss
+- Attendance
+- Assignments
+- Exams
+- Grades
+- Courses
+- Student performance
+- Administrative reporting
 
-</td>
-<td valign="top">
+EduPortal brings these workflows together and adds an **AI intelligence layer** that analyzes academic data to identify patterns, risks and improvement opportunities.
 
-- Manage students, teachers, courses & classes
-- Performance analytics & comparative reports
-- Activity monitoring across the platform
-- Risk analysis & AI-backed decision support
+> **The goal isn't just to store academic data — it's to turn academic data into actionable intelligence.**
 
-</td>
-</tr>
-</table>
+---
 
-<br/>
+# 🚨 Problem Statement
 
-<h2 style="color:#3B82F6;">🛠️ Tech Stack</h2>
+Educational institutions frequently depend on disconnected systems, spreadsheets and manual processes for managing academic information.
 
-<table>
-<tr><th style="background-color:#1E1E2E; color:white;">Layer</th><th style="background-color:#1E1E2E; color:white;">Technology</th></tr>
-<tr><td><b>Frontend</b></td><td>React + TypeScript + Vite</td></tr>
-<tr><td><b>Backend</b></td><td>Node.js + Express + TypeScript</td></tr>
-<tr><td><b>Database</b></td><td>MongoDB</td></tr>
-<tr><td><b>AI Layer</b></td><td>OpenRouter API integration</td></tr>
-<tr><td><b>Auth</b></td><td>JWT-based role authentication (Admin / Teacher / Student)</td></tr>
-</table>
+This creates several problems:
 
-<br/>
+- 📋 Manual attendance tracking
+- 📊 Fragmented performance data
+- 📝 Disconnected assignment and examination workflows
+- ⚠️ Late identification of struggling students
+- 🔎 Difficult performance analysis
+- 👨‍🏫 High administrative workload
+- ❌ Lack of personalized academic guidance
 
-<h2 style="color:#10B981;">📐 How It's Organized</h2>
+A student may have low attendance, weak assignment performance and declining exam scores — but these signals often remain isolated across different systems.
 
+### Our Approach
+
+EduPortal combines these academic signals into a centralized platform and uses AI to help identify meaningful patterns.
+
+---
+
+# 🚀 Key Features
+
+## 🧑‍🎓 Student Portal
+
+Students can:
+
+- 📚 Browse and enroll in courses
+- 📈 Track academic progress
+- 📝 View and submit assignments
+- 🗓️ View attendance
+- 📊 Check grades and examination results
+- 💡 Receive AI-powered improvement recommendations
+- 🔔 Receive academic notifications
+- 👤 Manage their profile
+
+---
+
+## 👩‍🏫 Teacher Portal
+
+Teachers can:
+
+- 👥 Manage students
+- 📚 Manage courses
+- 📝 Create assignments
+- ✅ Evaluate submissions
+- 🗓️ Record attendance
+- 🧪 Conduct examinations
+- 📊 Enter and manage grades
+- 📈 Analyze class performance
+- 📢 Create announcements
+- 🔔 Manage notifications
+
+---
+
+## 🛡️ Admin Portal
+
+Administrators can:
+
+- 👥 Manage students
+- 👩‍🏫 Manage teachers
+- 📚 Manage courses
+- 🏫 Manage classes
+- 📝 Manage examinations
+- 📊 Generate reports
+- 📈 Monitor platform-wide performance
+- 🔎 Analyze academic risks
+- 🤖 Access AI-backed insights
+- 📢 Manage announcements
+
+---
+
+# 🧠 AI-Powered Academic Intelligence
+
+The core differentiator of EduPortal is its **academic intelligence layer**.
+
+Instead of treating attendance, assignments and examinations as isolated data points, the system can analyze them together.
+
+### AI capabilities include:
+
+- 📊 Academic performance analysis
+- ⚠️ Identification of potential academic risks
+- 📉 Detection of weak subjects
+- 🎯 Personalized improvement suggestions
+- 🔎 Performance trend analysis
+- 🧠 AI-generated academic insights
+- 👨‍🏫 Decision support for teachers and administrators
+
+### Example
+
+A student might have:
+
+```text
+Attendance      → 68%
+Assignment Avg  → 54%
+Exam Average    → 49%
+````
+
+Instead of simply displaying these numbers, the AI layer can identify the combined pattern and provide actionable guidance.
+
+---
+
+# 🏗️ System Architecture
+
+```text
+                    ┌─────────────────────────┐
+                    │       EduPortal         │
+                    │     Web Application     │
+                    └────────────┬────────────┘
+                                 │
+                                 ▼
+                    ┌─────────────────────────┐
+                    │   React + TypeScript    │
+                    │       Frontend          │
+                    └────────────┬────────────┘
+                                 │
+                         REST API Requests
+                                 │
+                                 ▼
+                    ┌─────────────────────────┐
+                    │   Node.js + Express     │
+                    │        Backend          │
+                    └────────────┬────────────┘
+                                 │
+                ┌────────────────┼────────────────┐
+                │                │                │
+                ▼                ▼                ▼
+        ┌──────────────┐ ┌──────────────┐ ┌──────────────┐
+        │   MongoDB    │ │ JWT Auth     │ │ AI Services  │
+        │   Database   │ │ & RBAC       │ │  OpenRouter  │
+        └──────────────┘ └──────────────┘ └──────────────┘
 ```
+
+---
+
+# 🛠️ Technology Stack
+
+| Layer            | Technology                    |
+| ---------------- | ----------------------------- |
+| Frontend         | React                         |
+| Language         | TypeScript                    |
+| Build Tool       | Vite                          |
+| Styling          | CSS                           |
+| Backend          | Node.js                       |
+| API Framework    | Express.js                    |
+| Backend Language | TypeScript                    |
+| Database         | MongoDB Atlas                 |
+| Authentication   | JWT                           |
+| AI Integration   | OpenRouter API                |
+| Security         | Helmet + CORS + Rate Limiting |
+| Compression      | Express Compression           |
+| Deployment       | Render                        |
+| Version Control  | Git + GitHub                  |
+
+---
+
+# 🔐 Authentication & Authorization
+
+EduPortal implements role-based authentication.
+
+### Supported roles
+
+```text
+                    ┌──────────────┐
+                    │    Admin     │
+                    └──────┬───────┘
+                           │
+              ┌────────────┴────────────┐
+              │                         │
+       ┌──────▼──────┐           ┌──────▼──────┐
+       │   Teacher   │           │   Student   │
+       └─────────────┘           └─────────────┘
+```
+
+Authentication is handled using **JWT-based authentication**, while role-based authorization controls access to protected resources.
+
+---
+
+# 📁 Project Structure
+
+```text
 EDUCATION-MANAGEMENT-PORTAL/
-├── client/          → React + TypeScript frontend
-│   └── src/
-│       ├── pages/   → admin, teacher, student, public, auth
-│       ├── layouts/ → role-based layouts
-│       └── context/ → auth state
 │
-└── server/          → Node.js + TypeScript backend
-    └── src/
-        ├── controllers/  → business logic
-        ├── models/       → database schemas
-        ├── routes/       → API endpoints
-        └── services/ai/  → AI insight engine
+├── client/
+│   ├── src/
+│   │   ├── pages/
+│   │   │   ├── admin/
+│   │   │   ├── teacher/
+│   │   │   ├── student/
+│   │   │   ├── auth/
+│   │   │   └── public/
+│   │   │
+│   │   ├── layouts/
+│   │   ├── components/
+│   │   ├── context/
+│   │   └── services/
+│   │
+│   ├── package.json
+│   └── vite.config.ts
+│
+├── server/
+│   ├── src/
+│   │   ├── config/
+│   │   ├── controllers/
+│   │   ├── middleware/
+│   │   ├── models/
+│   │   ├── routes/
+│   │   └── services/
+│   │       └── ai/
+│   │
+│   ├── package.json
+│   └── tsconfig.json
+│
+├── package.json
+└── README.md
 ```
 
-<br/>
+---
 
-<h2 style="color:#F59E0B;">⚡ Getting Started</h2>
+# 🔌 Backend API
+
+The backend exposes RESTful APIs for the major platform modules.
+
+### Core API groups
+
+```text
+/api/auth
+/api/users
+/api/courses
+/api/categories
+/api/enrollments
+/api/classes
+/api/assignments
+/api/submissions
+/api/attendance
+/api/exams
+/api/grades
+/api/reports
+/api/notifications
+/api/contact
+/api/ai
+/api/admin
+/api/announcements
+```
+
+### Health Check
+
+```text
+GET /api/health
+```
+
+Example response:
+
+```json
+{
+  "success": true,
+  "message": "EduPortal API is running"
+}
+```
+
+---
+
+# ⚡ Getting Started Locally
+
+## 1️⃣ Clone the repository
 
 ```bash
-# 1. Clone the repo
 git clone https://github.com/Rakshitharakshi21/education-management-portal.git
+
 cd education-management-portal
-
-# 2. Install dependencies (client + server)
-cd client && npm install
-cd ../server && npm install
-
-# 3. Set up environment variables
-cp server/.env.example server/.env
-# → fill in your DB connection string, JWT secret, and AI API key
-
-# 4. Run the app
-cd server && npm run dev      # backend
-cd client && npm run dev      # frontend (in a second terminal)
 ```
 
-<br/>
+---
 
-<h2 style="color:#06B6D4;">✅ How to Run and Verify</h2>
+## 2️⃣ Install frontend dependencies
 
-<table>
-<tr>
-<td width="50%" valign="top">
+```bash
+cd client
+npm install
+```
 
-**1. Backend Status**
-- Express server running on: `http://localhost:5000`
-- MongoDB connection: **Connected** ✅
+---
 
-</td>
-<td width="50%" valign="top">
+## 3️⃣ Install backend dependencies
 
-**2. Frontend Status**
-- Vite dev server running on: `http://localhost:5174`
-- Open it directly in your browser
+```bash
+cd ../server
+npm install
+```
 
-</td>
-</tr>
-</table>
+---
 
-**3. Seeded Test Credentials** — log in instantly with any of these:
+## 4️⃣ Configure environment variables
 
-<table>
-<tr><th style="background-color:#1E1E2E; color:white;">Role</th><th style="background-color:#1E1E2E; color:white;">Email</th><th style="background-color:#1E1E2E; color:white;">Password</th></tr>
-<tr><td>🛡️ <b>Admin</b></td><td><code>admin@eduportal.com</code></td><td><code>Admin@123</code></td></tr>
-<tr><td>👩‍🏫 <b>Teacher</b></td><td><code>priya.sharma@eduportal.com</code></td><td><code>Teacher@123</code></td></tr>
-<tr><td>🧑‍🎓 <b>Student</b></td><td><code>arjun.kumar@student.com</code></td><td><code>Student@123</code></td></tr>
-</table>
+Create:
 
-> ⚠️ These are demo/seed credentials for evaluation purposes only — not real accounts.
+```text
+server/.env
+```
 
-<br/>
+Example:
 
-<h2 style="color:#EC4899;">👥 Who Uses What</h2>
+```env
+PORT=5000
+NODE_ENV=development
 
-<table>
-<tr><th style="background-color:#1E1E2E; color:white;">Role</th><th style="background-color:#1E1E2E; color:white;">Can Do</th></tr>
-<tr><td>🧑‍🎓 <b>Student</b></td><td>View courses, submit assignments, check attendance/grades, get AI tips</td></tr>
-<tr><td>👩‍🏫 <b>Teacher</b></td><td>Take attendance, grade assignments, conduct exams, view class analytics</td></tr>
-<tr><td>🛡️ <b>Admin</b></td><td>Manage everyone, view reports, monitor risk analysis, oversee the platform</td></tr>
-</table>
+MONGODB_URI=your_mongodb_connection_string
 
-<br/>
+JWT_SECRET=your_jwt_secret
 
-<h2 style="color:#A855F7;">🎯 Why It Stands Out</h2>
+CLIENT_URL=http://localhost:5173
 
-- 🧠 **AI isn't a gimmick here** — it directly analyzes real academic data (attendance + assignments + exams) to generate actionable insight, not generic chat responses.
-- 🔐 **Role-based architecture** — three distinct, secure dashboards from one codebase.
-- 📈 **Built to scale** — clean separation between client/server, typed end-to-end with TypeScript.
+OPENROUTER_API_KEY=your_openrouter_api_key
+OPENROUTER_MODEL=openai/gpt-4o-mini
+```
 
-<br/>
+> Never commit real API keys, database passwords or secrets to GitHub.
 
-<div align="center">
+---
 
-### Made with ❤️ for smarter education
+# ▶️ Run the Application
 
-</div>
+## Start Backend
+
+From the `server` directory:
+
+```bash
+npm run dev
+```
+
+Backend:
+
+```text
+http://localhost:5000
+```
+
+---
+
+## Start Frontend
+
+Open another terminal:
+
+```bash
+cd client
+npm run dev
+```
+
+Frontend:
+
+```text
+http://localhost:5173
+```
+
+---
+
+# 🧪 Demo Credentials
+
+For evaluation, the application can be tested using the seeded accounts below.
+
+| Role          | Email                        | Password      |
+| ------------- | ---------------------------- | ------------- |
+| 🛡️ Admin     | `admin@eduportal.com`        | `Admin@123`   |
+| 👩‍🏫 Teacher | `priya.sharma@eduportal.com` | `Teacher@123` |
+| 🧑‍🎓 Student | `arjun.kumar@student.com`    | `Student@123` |
+
+> ⚠️ These credentials are intended only for demo/evaluation purposes.
+
+---
+
+# 🌍 Production Deployment
+
+The application is deployed as a production service on Render.
+
+### Production URL
+
+**[https://eduportal-xti9.onrender.com](https://eduportal-xti9.onrender.com)**
+
+### Production Architecture
+
+```text
+                    Internet
+                       │
+                       ▼
+              ┌─────────────────┐
+              │     Render      │
+              │   Web Service   │
+              └────────┬────────┘
+                       │
+              ┌────────┴────────┐
+              │                 │
+              ▼                 ▼
+        React Frontend     Express Backend
+                              │
+                    ┌─────────┴─────────┐
+                    │                   │
+                    ▼                   ▼
+              MongoDB Atlas        OpenRouter AI
+```
+
+---
+
+# 🔒 Security
+
+The backend includes multiple security measures:
+
+* 🔐 JWT authentication
+* 👥 Role-based authorization
+* 🛡️ Helmet security headers
+* 🌐 Configurable CORS
+* 🚦 API rate limiting
+* 📦 Request body size limits
+* 🔑 Environment-based secrets
+* 🧹 Centralized error handling
+
+---
+
+# 📊 Platform Modules
+
+| Module          | Student | Teacher | Admin |
+| --------------- | :-----: | :-----: | :---: |
+| Courses         |    ✅    |    ✅    |   ✅   |
+| Assignments     |    ✅    |    ✅    |   ✅   |
+| Attendance      |   👁️   |    ✏️   |   📊  |
+| Exams           |   👁️   |    ✏️   |   📊  |
+| Grades          |   👁️   |    ✏️   |   📊  |
+| Reports         |    —    |    📊   |   📊  |
+| AI Insights     |    ✅    |    ✅    |   ✅   |
+| User Management |    —    |    —    |   ✅   |
+| Announcements   |   👁️   |    ✅    |   ✅   |
+
+---
+
+# 🎯 Why EduPortal?
+
+### 1. 🧠 AI + Education
+
+AI is integrated into the academic workflow rather than being added as a standalone chatbot.
+
+### 2. 🔗 Unified Academic Ecosystem
+
+Attendance, assignments, exams, grades and courses are managed from one platform.
+
+### 3. 👥 Role-Based Experience
+
+Students, teachers and administrators receive different workflows based on their responsibilities.
+
+### 4. 📊 Data-Driven Decisions
+
+Academic information can be transformed into actionable insights.
+
+### 5. 🚀 Production Deployment
+
+The application is deployed and accessible through a public live URL.
+
+### 6. 🏗️ Scalable Architecture
+
+Frontend and backend are separated into maintainable, typed codebases.
+
+---
+
+# 👩‍💻 Team
+
+### Diya Vinod
+
+**CSE (AI & ML)**
+**USN:** `711524BAM018`
+
+### Rakshitha V
+
+**CSE**
+**USN:** `711524BCS137`
+
+---
+
+# 🔗 Important Links
+
+### 🌐 Live Application
+
+[https://eduportal-xti9.onrender.com](https://eduportal-xti9.onrender.com)
+
+### 💻 GitHub Repository
+
+[https://github.com/Rakshitharakshi21/education-management-portal](https://github.com/Rakshitharakshi21/education-management-portal)
+
+---
+
+# 📈 Future Improvements
+
+Potential future enhancements include:
+
+* 📱 Progressive Web App support
+* 🔔 Real-time notifications
+* 📊 Advanced predictive analytics
+* 🤖 More personalized AI learning recommendations
+* 📚 AI-generated study plans
+* 📈 Long-term student performance forecasting
+* 🧑‍🏫 AI teaching assistants
+* 🌍 Multi-language support
+* 📱 Dedicated mobile application
+
+---
+
+# ❤️ Built With
+
+Built with **React, TypeScript, Node.js, Express, MongoDB and AI** by:
+
+**Diya Vinod × Rakshitha V**
+
+### 🚀 EduPortal
+
+> **One platform. Every academic workflow. Smarter decisions.**
